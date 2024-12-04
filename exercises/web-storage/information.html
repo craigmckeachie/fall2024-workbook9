@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information</title>
+  </head>
+  <body>
+    <div id="messageDiv"></div>
+
+    <script>
+      "use strict";
+      const messageDiv = document.querySelector("#messageDiv");
+      let userAsString = localStorage.getItem("user");
+      let user = JSON.parse(userAsString);
+      messageDiv.innerText = `Welcome ${user.role} ${user.name}`;
+      
+    </script>
+  </body>
+</html>

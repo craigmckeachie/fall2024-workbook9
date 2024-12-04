@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <form>
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" />
+
+      <input type="radio" name="role" id="studentRadio" />
+      <label for="studentRadio">Student</label>
+      <input type="radio" name="role" id="teacherRadio" />
+      <label for="teacherRadio">Teacher</label>
+
+      <button type="button" onclick="enter()">Enter</button>
+    </form>
+    <script>
+      "use strict";
+      const nameInput = document.querySelector("#nameInput");
+      const studentRadio = document.querySelector("#studentRadio");
+      const teacherRadio = document.querySelector("#teacherRadio");
+
+      function enter() {
+        let user = { name: "", role: "" };
+        user.name = nameInput.value;
+        if (studentRadio.checked) {
+          user.role = "Student";
+        } else if (teacherRadio.checked) {
+          user.role = "Teacher";
+        }
+        const userAsString = JSON.stringify(user);
+        localStorage.setItem("user", userAsString);
+        location.href = "information.html";
+      }
+    </script>
+  </body>
+</html>
