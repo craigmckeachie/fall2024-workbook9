@@ -32,7 +32,8 @@
           user.role = "Teacher";
         }
         const userAsString = JSON.stringify(user);
-        localStorage.setItem("user", userAsString);
+        // localStorage.setItem("user", userAsString);
+        localStorage.user = userAsString;
         location.href = "information.html";
       }
     </script>

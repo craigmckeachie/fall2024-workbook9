@@ -11,10 +11,10 @@
     <script>
       "use strict";
       const messageDiv = document.querySelector("#messageDiv");
-      let userAsString = localStorage.getItem("user");
+    //   let userAsString = localStorage.getItem("user");
+      let userAsString = localStorage.user;
       let user = JSON.parse(userAsString);
       messageDiv.innerText = `Welcome ${user.role} ${user.name}`;
-      
     </script>
   </body>
 </html>
