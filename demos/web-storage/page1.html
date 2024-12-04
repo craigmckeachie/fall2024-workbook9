@@ -7,18 +7,20 @@
   </head>
   <body>
     <h3>Page 1</h3>
-    <button onclick="save()">Save</button>
-
+    <form>
+      <input type="text" />
+      <button type="button" onclick="save()">Save</button>
+    </form>
     <script>
       "use strict";
 
       function save() {
         //making a post or put requst to an api to save the data.
-        
+
         // localStorage.message = "Saved successfully";
         //OR
         localStorage.setItem("message", "Saved successfully");
-        
+
         location.href = "page2.html";
       }
     </script>
