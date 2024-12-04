@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+  </head>
+  <body>
+    <h3>Page 1</h3>
+    <button onclick="save()">Save</button>
+
+    <script>
+      "use strict";
+
+      function save() {
+        //making a post or put requst to an api to save the data.
+        
+        // localStorage.message = "Saved successfully";
+        //OR
+        localStorage.setItem("message", "Saved successfully");
+        
+        location.href = "page2.html";
+      }
+    </script>
+  </body>
+</html>
