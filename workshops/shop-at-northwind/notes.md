@@ -26,7 +26,8 @@ The [Backend API is in this repository](https://github.com/DevelopIntelligenceBo
 
 - [Git Collaboration Notes Landing Page](https://codewithcraig.netlify.app/git/git-collaboration/)
 - [Adding Collaborators](https://codewithcraig.netlify.app/git/github-repository-configuration/)
-  ![Main Branch Protection Rule](Screenshot2024_12_05_090521-1.jpg)
+- Main Branch Protection Rule
+  ![Main Branch Protection Rule](Screenshot2024_12_05_090733.jpg)
 - [Git Collaboration Feature Branch Workflow Cheatsheet](https://codewithcraig.netlify.app/git/git-collaboration-cheatsheet/)
 - [Git Collaboration Feature Branch Workflow Detailed](https://codewithcraig.netlify.app/git/git-feature-branch-workflow/)
 
